@@ -1,0 +1,3 @@
+*.geoparquet
+*.code-workspace
+.venv/
