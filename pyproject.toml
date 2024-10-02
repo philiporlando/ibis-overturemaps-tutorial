@@ -1,18 +1,12 @@
-[tool.poetry]
+[project]
 name = "ibis-overturemaps-tutorial"
 version = "0.1.0"
 description = ""
-authors = ["Philip Orlando <phlp.orlando@gmail.com>"]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-duckdb = "^1.1.1"
-ibis-framework = {extras = ["duckdb", "geospatial"], version = "^9.5.0"}
-lonboard = "^0.9.3"
-jupyter = "^1.1.1"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.10"
+dependencies = [
+    "duckdb>=1.1.1",
+    "ibis-framework[duckdb,geospatial]>=9.5.0",
+    "jupyter>=1.1.1",
+    "lonboard>=0.9.3",
+]
